@@ -1,5 +1,7 @@
 # llm-misinformation.github.io
 
-This is the website repo for the preprint paper **[Can LLM-Generated Misinformation Be Detected?](https://arxiv.org/abs/2309.13788)**
-
-The code, dataset and more resources on LLMs and misinformation will be released in [https://github.com/canyuchen/llm-misinformation](https://github.com/canyuchen/llm-misinformation).
+> This is the website repo for the initiative "**[LLMs Meet Misinformation](https://llm-misinformation.github.io/)**", which aims to combat misinformation in the age of LLMs.
+>
+> More resources on "**LLMs Meet Misinformation**" are on the website: https://llm-misinformation.github.io/
+>
+>Any suggestion, comment or related discussion is welcome. Please let us know by email: cchen151@hawk.iit.edu
