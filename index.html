@@ -440,7 +440,17 @@
         <p><b>Emerging Challenges for Detectors</b>:
           In the real world, detecting LLM-generated misinformation is in face with emerging challenges. First, it is difficult to obtain factuality supervision labels to train detectors for LLM-generated misinformation since it is harder for humans to detect than human-written misinformation. Second, malicious users can easily utilize methods shown in Table 1 and close-sourced LLMs (e.g., ChatGPT) or open-sourced LLMs (e.g., Llama2 (Touvron et al., 2023b)) to generate misinformation at scale in different domains, types, and errors, which is hard for conventional supervisedly trained detectors to maintain effective. Thus, <b>it is likely to be impractical to apply conventional supervisedly trained detectors to detect LLM-generated misinformation in the practices</b>.
           </p>
-        <p>Recently, there are multiple works that have shown LLMs can outperform conventional supervisedly trained models on detecting human-written misinformation in a zero-shot way (Pelrine et al., 2023; Zhang et al., 2023d; Bang et al., 2023; Buchholz, 2023; Li et al., 2023d). Thus, <b>we aim to investigate whether or not LLM detectors can detect ChatGPT-generated misinformation</b>.</p>
+        <p><b>Evaluation Setting</b>: We adopt LLMs such as GPT-4 with zero-shot prompting strategies as the
+          <b>representative misinformation detectors</b> to assess and compare the detection hardness of LLMgenerated misinformation and human-written misinformation for two reasons. First, zero-shot setting
+          can better reflect the real-world scenarios of detecting LLM-generated misinformation considering
+          the likely impracticality of conventional supervisedly trained detectors (e.g., BERT) in practices.
+          Second, there are many works that have demonstrated directly prompting LLMs such as GPT-4
+          in a zero-shot way can outperform conventional supervisedly trained models such as BERT on
+          detecting human-written misinformation (Pelrine et al., 2023; Zhang et al., 2023c; Bang et al., 2023;
+          Buchholz, 2023; Li et al., 2023b), which shows that zero-shot LLMs have already achieved almost
+          state-of-the-art performance in the task of misinformation detection. In the zero-shot setting, we can
+          adopt Success Rate % as the metric to measure the probability of LLM-generated or human-written
+          misinformation being successfully identified, representing the difficulty of being detected.</p>
         <p><b>Experiment Result Analysis</b>: First, we can observe that <b>it is also generally hard for LLM detectors to detect ChatGPT-generated misinformation</b>, especially those generated via Hallucinated News Generation, Totally Arbitrary Generation and Open-ended Generation. For example, LLM detectors can hardly detect fine-grained hallucinations.</p>
         <p>Second, previous works have shown that detectors can perform better than humans on detecting human-written misinformation (Pérez-Rosas et al., 2018). Comparing LLM detection and human detection performance, we can discover that <b>GPT-4 can outperform humans on detecting ChatGPT-generated misinformation</b>, though humans can still perform better than ChatGPT-3.5.</p>
         <br>
