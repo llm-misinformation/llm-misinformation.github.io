@@ -47,6 +47,17 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .grey-box {
+        background-color: #c0c0c0; /* Grey color */
+        color: rgb(70, 70, 70); /* White text color */
+        padding: 20px; /* Padding inside the box */
+        margin: 20px; /* Margin outside the box */
+        text-align: center; /* Center the text */
+    }
+  </style>
+
 </head>
 
 <body>
@@ -392,7 +403,16 @@
         our misinformation generation approaches 
         can bypass the safeguard of ChatGPT by prompting with each approach for 100 times. 
         The Attacking Success Rates are in Table 2. 
-        Thus, our first core finding is:  <mydiv><i><b>LLMs can follow users’ instructions to generate misinformation in different types, domains, and errors.</b></i></mydiv>
+        Thus, our first core finding is:  
+        
+
+        
+        <div class="grey-box">
+          <b>LLMs can follow users’ instructions to generate misinformation in different types, domains, and errors.</b>
+        </div>
+
+        
+        <!-- <mydiv><i><b>LLMs can follow users’ instructions to generate misinformation in different types, domains, and errors.</b></i></mydiv> -->
       </p>
 
       <br>
@@ -419,7 +439,10 @@
           <b>Experiment Result Analysis</b>: First, we can observe that <b>it is generally hard for humans to detect ChatGPT-generated misinformation</b>, especially those generated with Hallucinated News Generation, Totally Arbitrary Generation, Rewriting Generation, and Open-ended Generation.
         </p>
         <p>Second, we attempt to compare the human detection’s hardness for ChatGPT-generated and human-written misinformation that have the same semantics. We have demonstrated that Paraphrase Generation, Rewriting Generation, and Open-ended Generation generally only change the style information and preserve the original semantics. Comparing human detection performance on human-written misinformation (the grey numbers in Table 3) and ChatGPT-generated misinformation via Paraphrase Generation, Rewriting Generation and Open-ended Generation approaches (the red or green numbers in Table 3), we can discover that the human detection performances on ChatGPT-generated misinformation are mostly lower than those on human-written misinformation. Thus, we can have our second core finding shown as follows:
-          <mydiv><i><b>LLM-generated misinformation can be harder for humans to detect than human-written misinformation with the same semantics.</b></i></mydiv>
+          <!-- <mydiv><i><b>LLM-generated misinformation can be harder for humans to detect than human-written misinformation with the same semantics.</b></i></mydiv> -->
+          <div class="grey-box">
+            <b>LLM-generated misinformation <i>can be harder for humans</i> to detect than<br>human-written misinformation with the same semantics.</b>
+          </div>
         </p>
         <p>
           Our finding also validates that LLM-generated misinformation can have <b>more deceptive styles for humans</b> and implies humans can be potentially <b>more susceptible to LLM-generated misinformation than human-written misinformation</b>.
@@ -471,7 +494,10 @@
         <br>
         <p> After evaluating the overall performance of LLM detectors, we aim to further investigate whether or not LLM-generated misinformation can be harder for detectors to detect than human-written misinformation with the same semantics.</p>
         <p>As shown in Table 4, we can observe that the LLM detection performances on ChatGPT-generated misinformation are mostly lower than those on human-written misinformation. For example, Llama2-7B with "CoT" has a performance drop by 19.6% on detecting misinformation generated via Rewriting Generation based on Politifact compared with detecting human-written misinformation. Thus, we can have our third core finding:
-          <mydiv><b><i>LLM-generated misinformation can be harder for misinformation detectors to detect than human-written misinformation with the same semantics.</i></b></mydiv>
+          <!-- <mydiv><b><i>LLM-generated misinformation can be harder for misinformation detectors to detect than human-written misinformation with the same semantics.</i></b></mydiv> -->
+          <div class="grey-box">
+            <b>LLM-generated misinformation <i>can be harder for misinformation detectors</i> to detect<br>than human-written misinformation with the same semantics.</b>
+          </div>
         </p>
  
           <p>
